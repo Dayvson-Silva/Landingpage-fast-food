@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto" , sans-serif ;
+
+}
+
+:root {
+    --fast-color-h1:#FF7E00;
+    --background-color:linear-gradient(to top , #f4ece1, #fcfbf7) ;
+    --gray: #2f2f2f;
+}
+
+body{
+    background: var(--background-color);
+    height: 100vh;
+    margin: 48px 96px ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & div{
+
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+
+            & p{
+                font-size: 30px;
+                
+            }
+    }
+    & nav {
+
+        & a{
+            color: black;
+            padding: 25px;
+        }
+    }
+
+    div{
+
+        & .lupa{
+            position: absolute;
+            right: 270px;
+            cursor: pointer;
+        }
+        & input{
+          
+            border-radius: 45px;
+            border: none;
+            padding-inline: 50px;
+            padding-block: 20px;
+            width: 210px;
+            
+        }
+        
+        
+        & .carrinho{
+            
+            position: absolute;
+            right: 108px;
+            cursor: pointer;
+
+            /* linha separando o carrinho */
+            border-left: 1px solid #948c8c;
+            padding-left: 10px;
+        }
+    }
+}
+
+
+
